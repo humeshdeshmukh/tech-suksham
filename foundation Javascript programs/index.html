@@ -6,27 +6,39 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="inner">Msg </h1>
+    <button onclick="innermsg()">output</button>
     <style>
         button{
             background-color: aqua;
         }
     </style>
     <!--inline js-->
-    <p onclick="alert('welcome')">Demo --inline</p>
-
+    <!--<p onclick="alert('welcome')">Demo --inline</p>-->
+    
     <!--Internal js-->
     <button onclick="msg()">Demo --Internal</button>
-
+    
     <!--external js-->
-    <button  onclick="ExtMsg()">Demo --external</button>
-
+    <button onclick="ExtMsg()">Demo --external</button>
+    
     <script>
-        
         function msg(){
-            alert("welcome, in internal css")
-
+            //alert("welcome, in internal css")
+            window.alert("welsome in alert box")
         }
     </script>
+
+    <script>
+    //altert function
+
+    function innermsg(){
+        document.getElementById("inner").innerHTML="welcome to pallotti";
+    }
+
+    </script>
     
+    <!-- External JavaScript file should be included at the end of the body tag -->
+    <script src="Types.js"></script>
 </body>
 </html>

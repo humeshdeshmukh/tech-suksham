@@ -1,5 +1,3 @@
-
-function msg(){
-    alert("welcome, in internal css")
-
+function ExtMsg(){
+    alert("welcome, in external js")
 }
